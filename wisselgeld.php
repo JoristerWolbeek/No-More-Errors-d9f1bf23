@@ -17,7 +17,7 @@ $restBedrag = $bedrag;
 
 
 try {
-    if (!$argv[1]) {
+    if(!$argv[1]) {
         throw new exception ("Er is geen argument meegegeven, geef een getal.");
     }
     if($bedrag<0) {
