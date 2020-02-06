@@ -17,6 +17,9 @@ $restBedrag = $bedrag;
 
 
 try {
+    if (!$argv[1]) {
+        throw new exception ("Er is geen argument meegegeven, geef een getal.");
+    }
     if($bedrag<0) {
         throw new exception ("ik kan geen min getal terug geven.");
     }
